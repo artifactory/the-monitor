@@ -1,7 +1,7 @@
 Monitoring 101: Collecting the right data
 ====================================================
 
-*This post is part of a series on effective monitoring. Be sure to check out the rest of the series: [Alerting on what matters](/blog/monitoring-101-alerting/) and [Investigating performance issues](/blog/monitoring-101-investigation/).*
+*This post is part of a series on effective monitoring. Be sure to check out the rest of the series: [Alerting on what matters](https://github.com/DataDog/the-monitor/blob/master/monitoring-101/monitoring_101_alerting_on_what_matters.md) and [Investigating performance issues](https://github.com/DataDog/the-monitor/blob/master/monitoring-101/monitoring_101_investigating_performance_issues.md).
 
 Monitoring data comes in a variety of forms—some systems pour out data continuously and others only produce data when rare events occur. Some data is most useful for *identifying* problems; some is primarily valuable for *investigating* problems. More broadly, having monitoring data is a necessary condition for [*observability*](https://en.wikipedia.org/wiki/Observability) into the inner workings of your systems. 
 
@@ -114,7 +114,7 @@ The data you collect should have four characteristics:
 
 ## Data for alerts and diagnostics 
 
-The table below maps the different data types described in this article to different levels of alerting urgency outlined [in a companion post](https://www.datadoghq.com/blog/2015/06/monitoring-101-alerting/). In short, a *record* is a low-urgency alert that does not notify anyone automatically but is recorded in a monitoring system in case it becomes useful for later analysis or investigation. A *notification* is a moderate-urgency alert that notifies someone who can fix the problem in a non-interrupting way such as email or chat. A *page* is an urgent alert that interrupts a recipient’s work, sleep, or personal time, whatever the hour. Note that depending on severity, a notification may be more appropriate than a page, or vice versa:
+The table below maps the different data types described in this article to different levels of alerting urgency outlined [in a companion post](https://github.com/DataDog/the-monitor/blob/master/monitoring-101/monitoring_101_alerting_on_what_matters.md). In short, a *record* is a low-urgency alert that does not notify anyone automatically but is recorded in a monitoring system in case it becomes useful for later analysis or investigation. A *notification* is a moderate-urgency alert that notifies someone who can fix the problem in a non-interrupting way such as email or chat. A *page* is an urgent alert that interrupts a recipient’s work, sleep, or personal time, whatever the hour. Note that depending on severity, a notification may be more appropriate than a page, or vice versa:
 
 | **Data**                      | **Alert**    | **Trigger**                                                                         |
 |-------------------------------|--------------|-------------------------------------------------------------------------------------|
